@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.parse.LogInCallback;
@@ -17,6 +18,7 @@ import com.parse.ParseUser;
 public class LoginActivity extends AppCompatActivity {
 
     public static final String TAG = "LoginActivity";
+    private TextView tvTitle;
     private EditText etUsername;
     private EditText etPassword;
     private Button btnLogin;
@@ -31,6 +33,7 @@ public class LoginActivity extends AppCompatActivity {
             goToMainActivity();
         }
 
+        tvTitle = findViewById(R.id.tvTitle);
         etUsername = findViewById(R.id.etUsername);
         etPassword = findViewById(R.id.etPassword);
         btnLogin = findViewById(R.id.btnLogin);
