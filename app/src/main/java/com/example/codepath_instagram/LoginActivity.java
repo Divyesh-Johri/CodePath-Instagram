@@ -3,11 +3,13 @@ package com.example.codepath_instagram;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,7 +21,7 @@ import com.parse.SignUpCallback;
 public class LoginActivity extends AppCompatActivity {
 
     public static final String TAG = "LoginActivity";
-    private TextView tvTitle;
+    private ImageView ivTitle;
     private EditText etUsername;
     private EditText etPassword;
     private Button btnLogin;
@@ -29,13 +31,14 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        getSupportActionBar().hide();
 
         // Check if user is already signed in
         if (ParseUser.getCurrentUser() != null){
             goToMainActivity();
         }
 
-        tvTitle = findViewById(R.id.tvTitle);
+        ivTitle = findViewById(R.id.ivTitle);
         etUsername = findViewById(R.id.etUsername);
         etPassword = findViewById(R.id.etPassword);
         btnLogin = findViewById(R.id.btnLogin);
