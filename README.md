@@ -17,6 +17,18 @@ The following **optional** features are implemented:
 
 - [x] After the user submits a new post, show an indeterminate progress bar while the post is being uploaded to Parse.
 
+## Unit 6 User Stories
+
+The following **required** functionality is completed:
+
+- [x] User can view the last 20 posts submitted to "Instagram".
+- [x] The user should switch between different tabs - viewing all posts (feed view), compose (capture photos form camera) and profile tabs (posts made) using fragments and a Bottom Navigation View. (2 points)
+- [x] User can pull to refresh the last 20 posts submitted to "Instagram".
+
+The following **optional** features are implemented:
+
+- [x] User sees app icon in home screen and styled bottom navigation view
+
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
@@ -27,7 +39,8 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-This app demonstrates use of an implicit intent to the camera app and usage of a custom backend and API using https://www.back4app.com/
+This app demonstrates use of an implicit intent to the camera app and usage of a custom backend and API using https://www.back4app.com/.
+It is also a demonstration of Fragments and a bottom navigator.
 
 ## Open-source libraries used
 
